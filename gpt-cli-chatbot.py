@@ -1,4 +1,4 @@
-#Created by Jason Hand - testing Datadog's OpenAI Monitoring integration 
+# Created by Jason Hand - testing Datadog's OpenAI Monitoring integration 
 import openai
 from dotenv import load_dotenv
 import os
