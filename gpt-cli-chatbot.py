@@ -1,8 +1,14 @@
 #Created by Jason Hand - testing Datadog's OpenAI Monitoring integration 
 import openai
+from dotenv import load_dotenv
+import os
 
-# OpenAI API credentials
-openai.api_key = 'YOUR-OPENAI-API-KEY'
+# Load the .env file
+load_dotenv()
+
+
+# Set the OpenAI API key from the .env file
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Create a function to generate text using gpt-3.5-turbo
 def generate_text(prompt):
